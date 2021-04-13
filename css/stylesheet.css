@@ -22,7 +22,6 @@ footer {
     filter: opacity(50%); 
 }
 
-
 .button-colour {
     background-color: #4a2545;
     border: 0;
@@ -77,10 +76,29 @@ footer {
     background-color: #4a2545;
  }
 
+ .space {
+     display: flex;
+     width: 100%;
+ }
+
  /* .collapse-black {
     color: #000 !important;
 } */
 
+@keyframes LogoAnimation {
+   0% {transform: translateY(0);}
+   50% {transform: translateY(-10px);}
+   100% {transform: translateY(0);}
+}
+
+
+.bounce:hover {
+    animation-name: LogoAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-out;
+    animation-direction: reverse;  
+}
 
  @media screen and (max-width: 768px) {
     #background {
